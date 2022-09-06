@@ -50,39 +50,30 @@ const select = React.forwardRef((props, ref)=>{
             __unstable_presence={presence}  // Handles presence avatars
             inputId={inputId} 
         >
-        <Radio
-            checked={value === 'arrows_right_top'}
-            name="arrows_right_top"
-            id="arrows_right_top"
-            onChange={handleChange}
-            value="arrows_right_top"
-        />
-        <label htmlFor="arrows_right_top">En haut à droite</label> <br />
-        <Radio
-            checked={value === 'arrows_right_bottom'}
-            name="arrows_right_bottom"
-            id="arrows_right_bottom"
-            onChange={handleChange}
-            value="arrows_right_bottom"
-        />
-        <label htmlFor="arrows_right_bottom">En bas à droite</label> <br />
-        <Radio
-            checked={value === 'arrows_center_bottom'}
-            name="arrows_center_bottom"
-            id="arrows_center_bottom"
-            onChange={handleChange}
-            value="arrows_center_bottom"
-        />
-        <label htmlFor="arrows_center_bottom">En bas au milieu</label> <br />
-        <Radio
-            checked={value === 'arrows_split_center'}
-            name="arrows_split_center"
-            id="arrows_split_center"
-            onChange={handleChange}
-            value="arrows_split_center"
-        />
-        <label htmlFor="arrows_split_center">Au milieu espacé</label> <br />
 
+        <Select
+            id={inputId}                  // A unique ID for this input
+            value={value || ''}                 // Current field value
+            readOnly={readOnly}           // If "readOnly" is defined make this field read only
+            placeholder={placeholder}     // If placeholder is defined, display placeholder text
+            onFocus={onFocus}             // Handles focus events
+            onBlur={onBlur}               // Handles blur events
+            ref={ref}
+            onChange={handleChange}
+        >
+            <option selected value={value}>
+                {value==="arrows_right_top" ? "En haut à droite" : ""}
+                {value==="arrows_right_bottom" ? "En bas à droite" : ""}
+                {value==="arrows_center_bottom" ? "En bas au milieu" : ""}
+                {value==="arrows_split_center" ? "Au milieu espacé" : ""}
+            </option>
+            {value !=="arrows_right_top" && <option value="arrows_right_top">En haut à droite</option>}
+            {value !=="arrows_right_bottom" && <option value="arrows_right_bottom">En bas à droite</option>}
+            {value !=="arrows_center_bottom" && <option value="arrows_center_bottom">En bas au milieu</option>}
+            {value !=="arrows_split_center" && <option value="arrows_split_center">Au milieu espacé</option>}
+
+
+        </Select>
 
       </FormField>
     )

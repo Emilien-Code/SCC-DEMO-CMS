@@ -50,39 +50,30 @@ const select = React.forwardRef((props, ref)=>{
             __unstable_presence={presence}  // Handles presence avatars
             inputId={inputId} 
         >
-        <Radio
-            checked={value === 'search'}
-            name="search"
-            id="search"
-            onChange={handleChange}
-            value="search"
-        />
-        <label htmlFor="search">Recherche</label> <br />
-        <Radio
-            checked={value === 'center'}
-            name="center"
-            id="center"
-            onChange={handleChange}
-            value="center"
-        />
-        <label htmlFor="center">Centré</label> <br />
-        <Radio
-            checked={value === 'left'}
-            name="left"
-            id="left"
-            onChange={handleChange}
-            value="left"
-        />
-        <label htmlFor="left">Gauche</label> <br />
-        <Radio
-            checked={value === 'right'}
-            name="right"
-            id="right"
-            onChange={handleChange}
-            value="right"
-        />
-        <label htmlFor="right">droite</label> <br />
 
+        <Select
+            id={inputId}                  // A unique ID for this input
+            value={value || ''}                 // Current field value
+            readOnly={readOnly}           // If "readOnly" is defined make this field read only
+            placeholder={placeholder}     // If placeholder is defined, display placeholder text
+            onFocus={onFocus}             // Handles focus events
+            onBlur={onBlur}               // Handles blur events
+            ref={ref}
+            onChange={handleChange}
+        >
+            <option selected value={value}>
+                {value==="search" ? "Barre de recherche" : ""}
+                {value==="center" ? "Slogan centré" : ""}
+                {value==="left" ? "Slogan à gauche" : ""}
+                {value==="right" ? "Slogan à droite" : ""}
+            </option>
+            {value !=="search" && <option value="search">Barre de recherche</option>}
+            {value !=="center" && <option value="center">Slogan centré</option>}
+            {value !=="left" && <option value="left">Slogan à gauche</option>}
+            {value !=="right" && <option value="right">Slogan à droite</option>}
+
+
+        </Select>
 
       </FormField>
     )

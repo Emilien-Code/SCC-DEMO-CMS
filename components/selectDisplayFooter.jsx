@@ -50,20 +50,28 @@ const select = React.forwardRef((props, ref)=>{
             __unstable_presence={presence}  // Handles presence avatars
             inputId={inputId} 
         >
-        <Radio
-            checked={value === 'inline'}
-            name="displayInline"
+
+
+
+        <Select
+            id={inputId}                  // A unique ID for this input
+            value={value || ''}                 // Current field value
+            readOnly={readOnly}           // If "readOnly" is defined make this field read only
+            placeholder={placeholder}     // If placeholder is defined, display placeholder text
+            onFocus={onFocus}             // Handles focus events
+            onBlur={onBlur}               // Handles blur events
+            ref={ref}
             onChange={handleChange}
-            value="inline"
-        />
-        <label htmlFor="displayInline">En ligne</label> <br />
-        <Radio
-            checked={value === 'column'}
-            name="displayColumn"
-            onChange={handleChange}
-            value="column"
-        />
-        <label htmlFor="displayColumn">En colonne</label> <br />
+        >
+            <option selected value={value}> {value==="inline" ? "En ligne" : ""}
+                                            {value==="column" ? "En colonne" : ""}
+            </option>
+            {value !=="inline" && <option value="inline">En ligne</option>}
+            {value !=="column" && <option value="column">En colonne</option>}
+
+
+
+        </Select>
 
 
       </FormField>

@@ -50,30 +50,26 @@ const select = React.forwardRef((props, ref)=>{
             __unstable_presence={presence}  // Handles presence avatars
             inputId={inputId} 
         >
-        <Radio
-            checked={value === 'img-left'}
-            name="img-left"
-            id="img-left"
+
+
+        <Select
+            id={inputId}                  // A unique ID for this input
+            value={value || ''}                 // Current field value
+            readOnly={readOnly}           // If "readOnly" is defined make this field read only
+            placeholder={placeholder}     // If placeholder is defined, display placeholder text
+            onFocus={onFocus}             // Handles focus events
+            onBlur={onBlur}               // Handles blur events
+            ref={ref}
             onChange={handleChange}
-            value="img-left"
-        />
-        <label htmlFor="img-left">Image à gauche</label> <br />
-        <Radio
-            checked={value === 'img-right'}
-            name="img-right"
-            id="img-right"
-            onChange={handleChange}
-            value="img-right"
-        />
-        <label htmlFor="img-right">Image à droite</label> <br />
-        <Radio
-            checked={value === 'no-img'}
-            name="no-img"
-            id="no-img"
-            onChange={handleChange}
-            value="no-img"
-        />
-        <label htmlFor="no-img">Sans image</label> <br />
+        >
+            <option selected value={value}>{value==="no-img" ? "Aucune Image" : ""}{value==="img-left" ? "Image à gauche" : ""}{value==="img-right" ? "Image à droide" : ""}</option>
+            {value !=="img-left" && <option value="img-left">Image à gauche</option>}
+            {value !=="img-right" && <option value="img-right">Image à droide</option>}
+            {value !=="no-img" && <option value="no-img">Aucune Image</option>}
+
+
+        </Select>
+
 
       </FormField>
     )
