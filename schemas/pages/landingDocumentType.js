@@ -1,9 +1,11 @@
 import { array } from "prop-types";
+import {FcDocument } from "react-icons/fc"
 
 export default {
     name : "landing",
     title: "Landing",
     type: "document",
+    icon : FcDocument,
     fields: [
         {
           name: "landing",
@@ -43,5 +45,5 @@ export default {
     ],
     initialValue: {
         landing: "Landing page"
-      }
+    },
 }

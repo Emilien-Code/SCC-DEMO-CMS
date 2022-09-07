@@ -1,7 +1,10 @@
 import radio from '../../components/selectHeroDisplay'
+import { FcCompactCamera } from "react-icons/fc"
+
 export default {
     name: 'hero',
     type: 'object',
+    icon : FcCompactCamera,
     fields: [
       {
         name: 'title',
@@ -38,4 +41,11 @@ export default {
         inputComponent : radio
       }
     ],
+    preview : {
+      select : {
+        title: "title",
+        media : ""
+      }
+    }
+    
   }

@@ -1,8 +1,11 @@
 import radio from "../../components/selectDisplaySliderArrow";
+import { FcFilm } from "react-icons/fc"
+
 
 export default {
     name: 'Slider',
     type: 'object',
+    icon: FcFilm,
     fields: [
       {
         title: "Nom",
@@ -27,6 +30,12 @@ export default {
     ],
     initialValue: {
       name: "Slider"
+    },
+    preview : {
+      select : {
+        title: "title",
+        media : ""
+      }
     }
     
   }

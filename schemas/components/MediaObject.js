@@ -1,6 +1,9 @@
+import { FcPicture } from "react-icons/fc"
+
 export default {
     name: 'Media',
     type: 'object',
+    icon: FcPicture,
     fields: [
       {
         name: 'title',
@@ -24,4 +27,10 @@ export default {
         title: "Text Alternatif"
       }
     ],
+    preview : {
+      select : {
+        title: "title",
+        media : ""
+      }
+    }
   }

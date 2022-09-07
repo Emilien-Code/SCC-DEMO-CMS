@@ -1,6 +1,8 @@
+import { FcIdea } from "react-icons/fc"
 export default {
   name: 'steps',
   type: 'object',
+  icon : FcIdea,
   fields: [
     {
       title: "Nom",
@@ -20,5 +22,11 @@ export default {
   ],
   initialValue: {
     name: "Steps"
+  },
+  preview : {
+    select : {
+      title: "name",
+      media : ""
+    }
   }
 }
