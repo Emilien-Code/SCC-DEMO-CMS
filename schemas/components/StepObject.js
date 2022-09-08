@@ -1,4 +1,4 @@
-import select from "../../components/stepImgSelect";
+import select from "../../components/inputs/stepImgSelect";
 
 export default {
     name: 'step',

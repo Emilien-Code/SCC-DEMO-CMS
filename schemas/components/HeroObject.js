@@ -1,4 +1,4 @@
-import radio from '../../components/selectHeroDisplay'
+import radio from '../../components/inputs/selectHeroDisplay'
 import { FcCompactCamera } from "react-icons/fc"
 
 export default {

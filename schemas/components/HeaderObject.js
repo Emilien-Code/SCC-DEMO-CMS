@@ -1,4 +1,4 @@
-import radio from "../../components/selectDisplayHeader"
+import radio from "../../components/inputs/selectDisplayHeader"
 export default {
     name: 'header',
     type: 'object',

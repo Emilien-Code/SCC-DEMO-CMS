@@ -1,8 +1,16 @@
-import selectDisplayFooter from "../../components/selectDisplayFooter"
+import { Dialog } from "@sanity/ui"
+import selectDisplayFooter from "../../components/Inputs/selectDisplayFooter"
+import toolTip from "../../components/toolsTips/toolTip"
 export default {
     name: 'footer',
     type: 'object',
     fields: [
+      {
+        name: "dialog",
+        type: 'boolean',
+
+        inputComponent: toolTip
+      },
       {
         name: 'name',
         type: 'string',

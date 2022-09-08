@@ -1,4 +1,4 @@
-import radio from "../../components/selectDisplaySliderArrow";
+import radio from "../../components/inputs/selectDisplaySliderArrow";
 import { FcFilm } from "react-icons/fc"
 
 
