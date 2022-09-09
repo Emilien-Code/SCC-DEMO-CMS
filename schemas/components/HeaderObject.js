@@ -1,7 +1,9 @@
 import radio from "../../components/inputs/selectDisplayHeader"
+import headerTemplate from "../../components/Containers/HeaderContainer"
 export default {
     name: 'header',
     type: 'object',
+    inputComponent : headerTemplate,    
     fields: [
       {
         name: 'name',
@@ -14,7 +16,6 @@ export default {
         name: 'display',
         type: 'string',
         title: 'Affichage',
-        inputComponent : radio  
       }
     ],
     initialValue: {

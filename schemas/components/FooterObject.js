@@ -6,12 +6,6 @@ export default {
     type: 'object',
     fields: [
       {
-        name: "dialog",
-        type: 'boolean',
-
-        inputComponent: toolTip
-      },
-      {
         name: 'name',
         type: 'string',
         title: 'Name',

@@ -1,0 +1,128 @@
+@import "../../root.css";
+@import "../../variableOverrides.css";
+
+.component{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.hovered:hover button:nth-child(1){
+    transform: translate(calc(-50% - 40px),-50%);
+    transition: 300ms 300ms;
+}
+.hovered:hover button:nth-child(2){
+    transform: translate(calc(-50% + 40px),-50%);
+    transition: 300ms 500ms;
+}
+.hovered button:nth-child(1){
+    transform: translate(calc(-50% - 40px),200px);
+    transition: 300ms ;
+}
+.hovered button:nth-child(2){
+    transition: 300ms 300ms;
+    transform: translate(calc(-50% + 40px),150px);
+}
+.hovered button:hover svg path{
+    transition: 300ms;
+    fill: #ffffff;
+}
+.hovered button:hover svg circle, .hovered button:hover svg path{
+        transition: 300ms;
+}
+.hovered button:hover svg circle{
+    transition: 300ms;
+    fill: #2276FC;
+}
+.hovered button{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.hovered{
+    position: absolute;
+    left: 0;
+    transform: translateY(-100%);
+    transition: 300ms 300ms;
+    opacity: 0;
+    width: 100%;
+    background-color: #10111228;
+    height: 277px;
+    opacity: 0;
+    overflow: hidden;
+}
+.hovered:hover{
+    transition: 300ms 0ms;
+    opacity: 1;
+}
+
+.layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 277px;
+    background-color: var(--grey-background-composant);
+}
+
+
+
+
+.listHovered:hover button:nth-child(1){
+    transform: translate(calc(-50% - 40px),-50%);
+    transition: 300ms 300ms;
+}
+.listHovered:hover button:nth-child(2){
+    transform: translate(calc(-50% + 40px),-50%);
+    transition: 300ms 500ms;
+}
+.listHovered button:nth-child(1){
+    transform: translate(calc(-50% - 40px),200px);
+    transition: 300ms ;
+}
+.listHovered button:nth-child(2){
+    transition: 300ms 300ms;
+    transform: translate(calc(-50% + 40px),150px);
+}
+.listHovered button:hover svg path{
+    transition: 300ms;
+    fill: #ffffff;
+}
+.listHovered button:hover svg circle, .hovered button:hover svg path{
+        transition: 300ms;
+}
+.listHovered button:hover svg circle{
+    transition: 300ms;
+    fill: #2276FC;
+}
+.listHovered button{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.listHovered{
+    position: absolute;
+    left: 45px;
+    transition: 300ms 300ms;
+    opacity: 0;
+    width: calc(100% - 45px);
+    background-color: #10111228;
+    height: 277px;
+    opacity: 0;
+    overflow: hidden;
+}
+.listHovered:hover{
+    transition: 300ms 0ms;
+    opacity: 1;
+}

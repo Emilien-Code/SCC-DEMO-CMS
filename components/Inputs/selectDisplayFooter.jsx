@@ -63,7 +63,7 @@ const select = React.forwardRef((props, ref)=>{
             ref={ref}
             onChange={handleChange}
         >
-            <option selected value={value}> {value==="inline" ? "En ligne" : ""}
+            <option value={value}> {value==="inline" ? "En ligne" : ""}
                                             {value==="column" ? "En colonne" : ""}
             </option>
             {value !=="inline" && <option value="inline">En ligne</option>}

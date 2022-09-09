@@ -1,0 +1,63 @@
+@import "../../variableOverrides.css";
+@import "../../root.css";
+
+li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.drag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 59px;
+    background-color: var(--grey-background-composant);
+    border-radius: 10px;
+    margin-right: 11px;
+}
+.drag:hover{
+    cursor: grab;
+}
+.drag svg path{
+    transition: 300ms;
+}
+.drag:hover svg path{
+    fill: var(--blue-hover);
+    transition: 300ms;
+}
+.addComponentBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 59px;
+    width: calc(100% - 45px);
+    margin-left: 45px;
+    background-color: var(--grey-background-composant);
+    border: solid 1px var(--grey-storke-sanity);
+    transition: 300ms;
+}
+
+.addComponentBtn div{
+    display: flex;
+    justify-content: center;
+}
+.addComponentBtn div svg{
+    margin-right: 12px;
+    transition: 300ms;
+}
+
+.addComponentBtn:hover{
+    cursor: pointer;
+    transition: 300ms;
+    color: var(--white);
+    background-color: var(--blue-hover);
+}
+
+.addComponentBtn:hover svg{
+    transform: rotate(90deg);
+}
+.addComponentBtn:hover svg path{
+    transition: 300ms;
+    fill: var(--white) ;
+}

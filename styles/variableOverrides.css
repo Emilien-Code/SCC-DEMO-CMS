@@ -1,0 +1,22 @@
+:root{
+    --black :  #101112;
+    --white :  #ffffff;
+    --grey-composant :  #F0EEF0;;
+    --grey-background-composant :  #F4F4F4;
+    --grey-storke :  #F0EEF0;
+    --grey-storke-sanity :  #CED2D9;
+
+    --blue-hover : #2276FC;
+
+    --h2: 20px;
+    
+    --label: 13px;
+
+    --textInputPaddingTopBottom: 7px; 
+    --textInputPaddingLeftRight: 13px;
+}
+
+h1{
+    --font-size: 24px;
+}
+

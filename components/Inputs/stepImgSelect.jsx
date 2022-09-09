@@ -59,7 +59,7 @@ const select = React.forwardRef((props, ref)=>{
             ref={ref}
             onChange={handleChange}
         >
-            <option selected value={value}>{value}</option>
+            <option value={value}>{value}</option>
             {value !=="bolt" && <option value="bolt">bolt</option>}
             {value !=="cloud" && <option value="cloud">cloud</option>}
             {value !=="lock" && <option value="lock">lock</option>}

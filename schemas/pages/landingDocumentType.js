@@ -1,6 +1,6 @@
 import { array } from "prop-types";
-import {FcDocument } from "react-icons/fc"
-
+import { FcDocument } from "react-icons/fc"
+import schemasArray from "../../components/Containers/SchemasArray"
 export default {
     name : "landing",
     title: "Landing",
@@ -8,10 +8,14 @@ export default {
     icon : FcDocument,
     fields: [
         {
-          name: "landing",
-          title: "Landing page",
+          name: "titre",
+          title: "Titre",
           type : 'string',
-          readOnly : true
+        },
+        {
+          name: "description",
+          title: "Description",
+          type: "string"
         },
         {
           name: "header",
@@ -20,7 +24,7 @@ export default {
         },
         {
             name: "contenu",
-            title: "Contenu",
+            title: "contenu",
             type: 'array',
             of: [
                 {
@@ -35,7 +39,8 @@ export default {
                 {
                   type: "Slider",
                 },
-            ]
+            ],
+          inputComponent : schemasArray    
         },
         {
           name: "footer",
@@ -44,6 +49,7 @@ export default {
         },
     ],
     initialValue: {
-        landing: "Landing page"
+        titre: "Accueil",
+        contenu: "",
     },
 }

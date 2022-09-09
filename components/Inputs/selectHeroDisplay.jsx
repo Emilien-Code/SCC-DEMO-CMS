@@ -62,7 +62,7 @@ const select = React.forwardRef((props, ref)=>{
             ref={ref}
             onChange={handleChange}
         >
-            <option selected value={value}>{value==="no-img" ? "Aucune Image" : ""}{value==="img-left" ? "Image à gauche" : ""}{value==="img-right" ? "Image à droide" : ""}</option>
+            <option value={value}>{value==="no-img" ? "Aucune Image" : ""}{value==="img-left" ? "Image à gauche" : ""}{value==="img-right" ? "Image à droide" : ""}</option>
             {value !=="img-left" && <option value="img-left">Image à gauche</option>}
             {value !=="img-right" && <option value="img-right">Image à droide</option>}
             {value !=="no-img" && <option value="no-img">Aucune Image</option>}

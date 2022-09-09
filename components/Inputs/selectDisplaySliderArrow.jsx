@@ -61,7 +61,7 @@ const select = React.forwardRef((props, ref)=>{
             ref={ref}
             onChange={handleChange}
         >
-            <option selected value={value}>
+            <option value={value}>
                 {value==="arrows_right_top" ? "En haut à droite" : ""}
                 {value==="arrows_right_bottom" ? "En bas à droite" : ""}
                 {value==="arrows_center_bottom" ? "En bas au milieu" : ""}

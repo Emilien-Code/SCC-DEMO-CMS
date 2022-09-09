@@ -61,7 +61,7 @@ const select = React.forwardRef((props, ref)=>{
             ref={ref}
             onChange={handleChange}
         >
-            <option selected value={value}>
+            <option value={value}>
                 {value==="search" ? "Barre de recherche" : ""}
                 {value==="center" ? "Slogan centré" : ""}
                 {value==="left" ? "Slogan à gauche" : ""}
