@@ -4,10 +4,9 @@ import styles from "../../styles/component/containers/module.css"
 
 const config = (next) => {
     if(next){
-
-
         return (
             <>
+                
             </>
         )
     }
