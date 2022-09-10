@@ -1,6 +1,6 @@
 import { array } from "prop-types";
 import { FcDocument } from "react-icons/fc"
-import schemasArray from "../../components/Containers/SchemasArray"
+import schemasArray from "../../components/molecules/SchemasArray"
 export default {
     name : "landing",
     title: "Landing",

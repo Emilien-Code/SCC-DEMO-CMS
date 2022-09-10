@@ -1,0 +1,44 @@
+@import "../../root.css";
+@import "../../variableOverrides.css";
+
+.addItem{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: var(--black-opacity);
+}
+.addItemForm  {
+    background-color: var(--white);
+    width: 80%;
+    min-width: 1130px;
+    min-height: 697px;
+    height: 80%;
+    border-radius: 24px;
+}
+button{
+    height: 21px;
+    background-color: var(--white);
+    border: none;
+}
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+}
+.valider{
+    background-color: var(--green-sanity);
+    color: var(--white);
+    padding: 12px;
+    margin:  24px auto 40px auto;
+    text-align: center;
+    width: 217px;
+    height: 45px;
+    border-radius: 3px;
+    font-size: 16px;
+}

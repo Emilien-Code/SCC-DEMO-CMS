@@ -1,5 +1,5 @@
 import radio from "../../components/inputs/selectDisplayHeader"
-import headerTemplate from "../../components/Containers/HeaderContainer"
+import headerTemplate from "../../components/molecules/HeaderContainer"
 export default {
     name: 'header',
     type: 'object',
