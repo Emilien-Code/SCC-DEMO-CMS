@@ -1,12 +1,17 @@
 :root{
     --black :  #101112;
     --white :  #ffffff;
-    --grey-composant :  #F0EEF0;;
+    --grey-composant :  #F0EEF0;
     --grey-background-composant :  #F4F4F4;
     --grey-storke :  #F0EEF0;
     --grey-storke-sanity :  #CED2D9;
+    --black-opacity: #10111268;
+    --Grey-txt: #727272;
 
+    --green-sanity : #3AB564;
     --blue-hover : #2276FC;
+    --blue-text : #1A4D9E;
+    --blue-bg : #D2E3FE;
 
     --h2: 20px;
     

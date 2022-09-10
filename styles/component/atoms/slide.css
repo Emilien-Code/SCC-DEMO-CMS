@@ -1,0 +1,43 @@
+@import "../../root.css";
+@import "../../variableOverrides.css";
+
+.slide{
+    width: 400px;
+    padding: 24px;
+    cursor: pointer;
+    z-index: 2;
+}
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 256px;
+    background-color: var(--grey-background-composant);
+    margin-bottom: 24px;
+}
+.top span{
+    display: block;
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 2px 6px;
+    background-color: var(--blue-bg);
+    color: var(--blue-text);
+    margin-bottom: 16px;
+}
+h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+p{
+    font-size: 16px;
+    color: var(--Grey-txt);
+}
+.top    {
+    display: flex;
+    justify-content: space-between;
+}
