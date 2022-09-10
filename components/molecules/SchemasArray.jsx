@@ -13,7 +13,7 @@ import { useId } from "@reach/auto-id" // hook to generate unique IDs
 import PatchEvent, {set, unset} from '@sanity/form-builder/PatchEvent'
 import styles from "../../styles/component/molecules/schemasArray.css"
 import Component from "../atoms/component";
-import AddItem from "./addComponent.jsx"
+import AddItem from "./editComponent"
 
 const select = React.forwardRef((props, ref)=>{
 
