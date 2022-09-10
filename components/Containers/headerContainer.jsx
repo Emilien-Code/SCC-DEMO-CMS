@@ -52,7 +52,16 @@ const select = React.forwardRef((props, ref)=>{
 
 
 
-                {/* <FormField
+                {/*
+                  * These properties allows to connect thes jsx to Schemas data.
+                  * It will probably be usefull when we will want to modify this component.
+                  * 
+                  * 
+                  * 
+                  * 
+                  *   *   *   *  *  *   *   *   *   *   *   *   *   *
+                
+                <FormField
                     description={type.description}  // Creates description from schema    // Creates label from schema title
                     __unstable_markers={markers}    // Handles all markers including validation
                     __unstable_presence={presence}  // Handles presence avatars

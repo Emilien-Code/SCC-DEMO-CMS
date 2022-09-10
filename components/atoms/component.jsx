@@ -1,12 +1,19 @@
 import React from "react"
 import styles from "../../styles/component/atoms/component.css"
 
-
+/**
+ * @bug change button svg stroke color when hovered
+ */
 
 const component = ({ comp, isListe })=>{
     return (
         <>
             <div className={styles.layout}>
+                {
+                /**
+                 * Selectiion of the right SVG
+                */
+                }
 
                 {
                     comp._type==="hero" && (
